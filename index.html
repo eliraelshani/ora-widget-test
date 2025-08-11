@@ -10,6 +10,11 @@
   <p>This is a simple page to test the chat integration.</p>
 
   <!-- ✅ Add your script tag with params -->
-  <script src="https://agenticonvo.com/ora/ora-v1.0.0.js?site_id=testsite123&lang=en" defer></script>
+<script src="https://dev.agenticonvo.com/ora/ora-v1.0.0.js" defer></script>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    window.initiateOraChatbot({ siteId: "3c5633d6-6d72-11f0-9286-8a46bde1304c" });
+  });
+</script>
 </body>
 </html>
