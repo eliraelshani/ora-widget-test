@@ -10,14 +10,21 @@
   <p>This is a simple page to test the chat integration.</p>
 
   <!-- ✅ Add your script tag with params -->
-<script src="https://dev.agenticonvo.com/ora/{profile}/ora-v1.0.0.js" defer></script>
-<script>
-  window.addEventListener("DOMContentLoaded", () => {
-    window.initiateOraChatbot({ 
-      entityId: "abc",
-      profile: "fashora"
+<script src="https://dev.agenticonvo.com/ora/osteoarthritis/ora-v1.0.0.js" defer></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      try {
+        if (!window.__ora_demo_initialized__) {
+          window.__ora_demo_initialized__ = true;
+          window.initiateOraChatbot({ 
+            entityId: "main-site",
+            profile: "osteoarthritis"
+          });
+        }
+      } catch (e) {
+        console.error("Failed to initialize Ora widget demo:", e);
+      }
     });
-  });
-</script>
+  </script>
 </body>
 </html>
